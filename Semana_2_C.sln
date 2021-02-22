@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Viajes", "Ejercic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Almacen", "Ejercicio_Almacen\Ejercicio_Almacen.csproj", "{ECDAA68C-195F-4E72-9618-A8DC7F049571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videoclub", "Videoclub\Videoclub.csproj", "{3F93CC09-38E3-414D-8453-42701C2B98BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ECDAA68C-195F-4E72-9618-A8DC7F049571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECDAA68C-195F-4E72-9618-A8DC7F049571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECDAA68C-195F-4E72-9618-A8DC7F049571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

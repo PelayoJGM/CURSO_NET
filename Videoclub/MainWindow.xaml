@@ -1,0 +1,15 @@
+﻿<Window x:Class="Videoclub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Videoclub"
+        mc:Ignorable="d"
+        Title="Formulario de productos" Height="450" Width="800">
+    <Grid Background="Olive">
+        <Label Content="VIDEOCLUB MADISON" FontSize="25" FontWeight="Bold" FontFamily="times new roman" Foreground="white" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="43"/>
+        <WrapPanel Background="orange" HorizontalAlignment="Left" Height="147" Margin="56,87,0,0" VerticalAlignment="Top" Width="400"/>
+        <WrapPanel/>
+
+    </Grid>
+</Window>
