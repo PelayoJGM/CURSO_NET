@@ -1,0 +1,91 @@
+﻿<Window x:Class="Ejercicio_Viajes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_Viajes"
+        mc:Ignorable="d"
+        Title="ABM Viajes" Height="950" Width="1500"
+    Icon="C:\Users\MAÑANA\Downloads\globe.png" Background="LightSteelBlue">
+
+
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="134" LastChildFill="False" Margin="45,38,0,0" VerticalAlignment="Top" Width="434">
+            <Label FontSize="27" Margin="0,60,0,0" Width="436" Height="124" VerticalAlignment="Top">
+                <ComboBox Name="MyCombo" Height="35"  Width="300">
+                    <ComboBoxItem Name="cbi1">Gigia Consultores</ComboBoxItem>
+                    <ComboBoxItem Name="cbi2">Fundacion Metal</ComboBoxItem>
+                    <ComboBoxItem Name="cbi3">Intermark</ComboBoxItem>
+                </ComboBox>
+
+            </Label>
+            <Label Name="Empresa" Content="Empresa" Height="45" Margin="-760,10,0,0" VerticalAlignment="Top" Width="116" FontSize="27"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="151" LastChildFill="False" Margin="45,172,0,0" VerticalAlignment="Top" Width="1139">
+            <Label Content="Fecha de Salida" FontSize="27" Height="55" Margin="0,10,0,0" VerticalAlignment="Top" Width="204"/>
+            <Label Content="Fecha de LLegada" FontSize="27" Height="55" Margin="400,10,0,0" VerticalAlignment="Top" Width="265" RenderTransformOrigin="1.679,0.458"/>
+            <DatePicker Name="fecha1" FontSize="24" Margin="-1350,70,0,26" Width="368"/>
+            <DatePicker Name="fecha2" FontSize="24" Height="60" Margin="-260,65,0,26" Width="404"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="151" LastChildFill="False" Margin="45,328,0,0" VerticalAlignment="Top" Width="1139">
+            <Label Content="Lugar de Salida" FontSize="27" Height="55" Margin="0,10,0,0" VerticalAlignment="Top" Width="204"/>
+            <Label Content="Lugar de LLegada" FontSize="27" Height="55" Margin="400,10,0,0" VerticalAlignment="Top" Width="265" RenderTransformOrigin="1.679,0.458"/>
+
+            <ComboBox Name="ComboN" FontSize="26" Text="MyCombo" Height="35" Margin="-1400,65,0,0" VerticalAlignment="Top" Width="339">
+
+                <ComboBoxItem Name="cbi4">Londres</ComboBoxItem>
+                <ComboBoxItem Name="cbi5">Paris</ComboBoxItem>
+                <ComboBoxItem Name="cbi6">Roma</ComboBoxItem>
+                </ComboBox>
+
+
+
+            <ComboBox Name="ComboN2" FontSize="26"  Height="35" Margin="-250,65,0,0" VerticalAlignment="Top" Width="396">
+
+                <ComboBoxItem Name="cbi7">NY</ComboBoxItem>
+                <ComboBoxItem Name="cbi8">Zurich</ComboBoxItem>
+                <ComboBoxItem Name="cbi9">Viena</ComboBoxItem>
+            </ComboBox>
+
+
+
+
+        </DockPanel>
+        <WrapPanel  HorizontalAlignment="Left" Height="345" Margin="55,499,0,0" VerticalAlignment="Top" Width="424">
+            <Label Content="Cantidad de personas" FontSize="27" Height="48" Width="269"/>
+            <CheckBox Name="persona1" Content="1 Persona" FontSize="25" Height="52" Width="335"/>
+            <CheckBox Name="persona2" Content="2 Personas" FontSize="25" Height="52" Width="335"/>
+            <CheckBox Name="persona3" Content="3 Personas" FontSize="25" Height="52" Width="335"/>
+            <CheckBox Name="persona4" Content="4 Personas" FontSize="25" Height="52" Width="335"/>
+        </WrapPanel>
+        <Button Content="CANCELAR" FontSize="27" HorizontalAlignment="Left" Height="45" Margin="93,866,0,0" VerticalAlignment="Top" Width="445"/>
+        <Button Content="ACEPTAR" FontSize="27" HorizontalAlignment="Left" Height="45" Margin="755,866,0,0" VerticalAlignment="Top" Width="445" Click="Button_Click"/>
+        <WrapPanel HorizontalAlignment="Left" Height="343" Margin="568,501,0,0" VerticalAlignment="Top" Width="787">
+            <Label Content="Datos de persona responsable" FontSize="27" Height="54" Width="416"/>
+            <Label Content="Nombre:" FontSize="27" Height="54" Width="788" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.272"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBox Name="txtNombre" FontSize="23" Height="43" TextWrapping="Wrap" Text="" Width="655" Background="gray"/>
+            <Label Content="Correo electrónico:"  FontSize="27" Height="54" Width="788" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.272"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBox Name="correo" FontSize="26" Height="43" TextWrapping="Wrap" Text="" Width="655" Background="gray"/>
+        </WrapPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,94 @@
+﻿<Window x:Class="Ejercicio_Almacen.MainWindow" Background="WhiteSmoke"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_Almacen"
+        mc:Ignorable="d"
+        Title="                                                                              Registros de Ventas de Almacén" Height="450" Width="800" >
+    <Grid Margin="0,0,-6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="367*"/>
+            <ColumnDefinition Width="433*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="C:\Users\MAÑANA\Downloads\foto1.bmp"  HorizontalAlignment="Left" Height="59" Margin="10,20,0,0" VerticalAlignment="Top" Width="95" />
+        <Label Content=" Ventas de Artículos" BorderThickness="2" BorderBrush="Crimson"  FontSize="18" Foreground="MediumBlue" FontFamily="Verdana" FontWeight="Bold" HorizontalAlignment="Left" Height="42" Margin="126,37,0,0" VerticalAlignment="Top" Width="222"/>
+        <GroupBox Header="" Foreground="Blue" HorizontalAlignment="Left" Width="85" Margin="0,84,0,80" BorderThickness="2px">
+            <WrapPanel HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="72" Margin="0,10,0,0">
+                <Label Content="Fecha:" Foreground="DeepSkyBlue" Height="30" Width="82"/>
+                <Label Content="Descripción:" Foreground="Blue" Height="30" Width="82"/>
+                <Label Content="Nombre" Height="30" Foreground="Blue" Width="82"/>
+                <Label Content="Descuento" Height="30" Foreground="Blue" Width="82"/>
+                <Label Content="Cantidad" Height="30" Foreground="Blue" Width="82"/>
+                <Label Content="PAGADO" Height="30" Foreground="Blue" Width="82"/>
+                <Label Content="TOTAL" Height="43" Foreground="Blue" FontSize="20" Width="82"/>
+            </WrapPanel>
+        </GroupBox>
+        <DatePicker x:Name="txtFecha" HorizontalAlignment="Left" Height="31" Margin="90,105,0,0" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="txtDescripcion" HorizontalAlignment="Left" Height="28" Margin="90,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" />
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="28" Margin="90,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" />
+        <ComboBox x:Name="txtDescuento"  HorizontalAlignment="Left" Height="26" Margin="90,200,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem>10%</ComboBoxItem>
+            <ComboBoxItem>12%</ComboBoxItem>
+            <ComboBoxItem>15%</ComboBoxItem>
+
+
+        </ComboBox>
+        <Label Content="  IVA" Foreground="Blue" HorizontalAlignment="Left" Height="26" Margin="148,201,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.829,0.538"/>
+        <TextBox x:Name="txtIva" HorizontalAlignment="Left" Height="21" Margin="188,205,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="49" />
+        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="21" Margin="90,235,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" Width="53" />
+        <Label Content="Precio/Uni" HorizontalAlignment="Left" Height="25" Margin="148,231,0,0" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="txtPrecUnit" HorizontalAlignment="Left" Height="21" Margin="224,235,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" Width="54"/>
+        <TextBox x:Name="txtPagado" HorizontalAlignment="Left" Height="20" Margin="90,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Margin="90,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
+        <Button Content="Nuevo" Background="LightSteelBlue" BorderThickness="2" BorderBrush="IndianRed" HorizontalAlignment="Left" Height="25" Margin="10,359,0,0" VerticalAlignment="Top" Width="58"/>
+        <Button Content="Agregar" Background="LightSteelBlue" BorderThickness="2" BorderBrush="IndianRed" HorizontalAlignment="Left" Height="25" Margin="88,359,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button Content="Cancelar" Background="LightSteelBlue" BorderBrush="IndianRed" BorderThickness="2" HorizontalAlignment="Left" Height="25" Margin="164,359,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button Content="Calculo" Foreground="White" BorderThickness="3" BorderBrush="IndianRed" FontSize="18" Background="RoyalBlue" HorizontalAlignment="Left" Height="40" Margin="252,359,0,0" VerticalAlignment="Top" Width="79" Click="Button_Click"/>
+        <Image  Source="C:\Users\MAÑANA\Downloads\Macroejercicio WPF_img2 (1).bmp" HorizontalAlignment="Left" Height="69" Margin="236,272,0,0" VerticalAlignment="Top" Width="95" />
+        
+        <WrapPanel Grid.Column="1" HorizontalAlignment="Left" Height="321" Margin="13,20,0,0" VerticalAlignment="Top" Width="395">
+            <ListView BorderThickness="2px" x:Name="IvDatos" Background="Silver"  HorizontalAlignment="Left" MinHeight="340" Width="390" Margin="-8,8,0,-128" RenderTransformOrigin="0.5,0.5" SelectionChanged="IvDatos_SelectionChanged" Height="252">
+                <ListView.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.614"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ListView.RenderTransform>
+                <ListView.View>
+                    <GridView AllowsColumnReorder="TRue">
+                        <GridViewColumn Header="Nombre" 
+                                                DisplayMemberBinding="{Binding Nombre}" Width="150"/>
+                        <GridViewColumn Header="Cantidad de venta"
+                                                DisplayMemberBinding="{Binding venta}" Width="190"/>
+                        <GridViewColumn Header="Precio Unitario"
+                                                DisplayMemberBinding="{Binding PecUni}" Width="70"/>
+                        <GridViewColumn Header="Descuento"
+                                                DisplayMemberBinding="{Binding Descuento}" Width="70"/>
+                    </GridView>
+                </ListView.View>
+                <Button Content="Button" Height="100" Width="75"/>
+            </ListView>
+
+
+
+
+
+
+
+
+
+
+        </WrapPanel>
+        <Button Content="Eliminar" Background="RoyalBlue" BorderThickness="2" BorderBrush="IndianRed" Foreground="White" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="13,379,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="Imprimir" Grid.Column="1" Foreground="White" BorderThickness="2" BorderBrush="IndianRed" Background="RoyalBlue" HorizontalAlignment="Left" Height="30" Margin="87,379,0,0" VerticalAlignment="Top" Width="54"/>
+        <Button Content="Salir" Grid.Column="1" Foreground="White" BorderThickness="2" BorderBrush="IndianRed" Background="RoyalBlue" HorizontalAlignment="Left" Height="30" Margin="155,379,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Total Registros" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="239,379,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" BorderThickness="2"   Height="27" Margin="341,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37"/>
+
+    </Grid>
+</Window>
