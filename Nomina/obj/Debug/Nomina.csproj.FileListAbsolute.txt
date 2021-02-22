@@ -1,0 +1,10 @@
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.Form1.resources
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\MAÑANA\source\repos\Nomina\bin\Debug\Nomina.exe
+C:\Users\MAÑANA\source\repos\Nomina\bin\Debug\Nomina.pdb
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.exe
+C:\Users\MAÑANA\source\repos\Nomina\obj\Debug\Nomina.pdb
