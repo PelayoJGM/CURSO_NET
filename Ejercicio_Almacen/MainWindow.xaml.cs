@@ -46,6 +46,7 @@ namespace Ejercicio_Almacen
             validar_Contenido(txtDescuento.Text, "DESCUENTO");
             validar_Contenido(txtIva.Text, "IVA");
             validar_Contenido(txtPagado.Text,"PAGADO");
+            //ghfhgf
            
 
         }
