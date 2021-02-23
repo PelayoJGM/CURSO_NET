@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Formulario de productos" Height="450" Width="800">
     <Grid Background="Olive">
-        <Label Content="VIDEOCLUB MADISON" FontSize="25" FontWeight="Bold" FontFamily="times new roman" Foreground="white" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="43"/>
+        <Label Content="VIDEOCLUB MADISON" FontSize="24" FontWeight="Bold" FontFamily="times new roman" Foreground="white" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="43"/>
         <WrapPanel Background="orange" HorizontalAlignment="Left" Height="147" Margin="56,87,0,0" VerticalAlignment="Top" Width="400"/>
         <WrapPanel/>
 
