@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Videoclub"
   ],
-  "SelectedNode": "\\Semana_2_C.sln",
+  "SelectedNode": "\\Videoclub\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
