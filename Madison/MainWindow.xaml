@@ -1,0 +1,41 @@
+﻿<Window x:Class="Madison.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Madison"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Olive">
+        <Label Content=" MADISON VIDEOCLUB" FontFamily="Times New Roman" FontSize="26" FontWeight="bold"   Foreground="White" HorizontalAlignment="Left" Margin="254,21,0,0" VerticalAlignment="Top" Height="36" Width="309"/>
+        <WrapPanel HorizontalAlignment="Left" Background="orange" Height="131" Margin="25,79,0,0" VerticalAlignment="Top" Width="383">
+            <Label Content="CODE" FontWeight="bold"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label Content="            PRICE" Width="89" FontWeight="bold"/>
+            <TextBox Height="22" TextWrapping="Wrap" Text="" Width="116"/>
+            <Label Content=" DESCRIPTION" FontWeight="bold" Width="89" Height="24"/>
+            <TextBox Height="68" TextWrapping="Wrap" Text="" Width="149" Margin="20,10"/>
+            <RadioButton Content="COMPACTDISK" Width="139" RenderTransformOrigin="0.679,0.985" Height="28"/>
+            <WrapPanel Height="91" Width="130"/>
+            <RadioButton Content="COMPACTDISK" FontWeight="bold" Height="25" Margin="0,-200,0,0" Width="111"/>
+            <RadioButton Content="BOOK" Height="26" FontWeight="bold" Margin="272,-220,0,0" Width="85"/>
+
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Background="DarkRed" Height="121" Margin="423,79,0,0" VerticalAlignment="Top" Width="176">
+            <Label Content="ARTIST" Foreground="white" FontSize="15" Width="66"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label Content="DISK" Foreground="white" FontSize="15" Width="57"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="120"/>
+        </WrapPanel>
+        <DataGrid Background="Gray" HorizontalAlignment="Left" Height="145" Margin="25,254,0,0" VerticalAlignment="Top" Width="594"/>
+        <Button Content="ADD" FontWeight="bold" FontSize="20" HorizontalAlignment="Left" Margin="654,279,0,0" VerticalAlignment="Top" Width="107" Height="44"/>
+        <Button Content="EXIT" FontWeight="bold" FontSize="20" HorizontalAlignment="Left" Margin="654,355,0,0" VerticalAlignment="Top" Width="107" Height="44"/>
+        <WrapPanel HorizontalAlignment="Left" Background="DarkRed" Height="121" Margin="608,79,0,0" VerticalAlignment="Top" Width="176">
+            <Label Content="AUTHOR" Foreground="white" FontSize="15"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label Content="ISBN" Foreground="white" FontSize="15" Width="81"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="120"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>
