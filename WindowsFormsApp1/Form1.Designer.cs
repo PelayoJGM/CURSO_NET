@@ -174,6 +174,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(370, 364);
             this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label7
             // 
@@ -193,6 +194,7 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 15;
             this.button1.Text = "Atras ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -202,6 +204,7 @@ namespace WindowsFormsApp1
             this.button2.TabIndex = 16;
             this.button2.Text = "Log";
             this.button2.UseVisualStyleBackColor = true;
+
             // 
             // button3
             // 
@@ -211,6 +214,7 @@ namespace WindowsFormsApp1
             this.button3.TabIndex = 17;
             this.button3.Text = "Modif";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -220,6 +224,7 @@ namespace WindowsFormsApp1
             this.button4.TabIndex = 18;
             this.button4.Text = "Bajas ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
