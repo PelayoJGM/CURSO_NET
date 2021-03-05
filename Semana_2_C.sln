@@ -13,7 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Viajes", "Ejercic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Almacen", "Ejercicio_Almacen\Ejercicio_Almacen.csproj", "{ECDAA68C-195F-4E72-9618-A8DC7F049571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videoclub", "Videoclub\Videoclub.csproj", "{3F93CC09-38E3-414D-8453-42701C2B98BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videoclub", "Videoclub\Videoclub.csproj", "{3F93CC09-38E3-414D-8453-42701C2B98BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ", "LinQ\LinQ.csproj", "{E7559931-2AFB-4B56-B8EF-9919FDDB7915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUCANET", "WindowsFormsApp1\HUCANET.csproj", "{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F93CC09-38E3-414D-8453-42701C2B98BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7559931-2AFB-4B56-B8EF-9919FDDB7915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7559931-2AFB-4B56-B8EF-9919FDDB7915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7559931-2AFB-4B56-B8EF-9919FDDB7915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7559931-2AFB-4B56-B8EF-9919FDDB7915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
