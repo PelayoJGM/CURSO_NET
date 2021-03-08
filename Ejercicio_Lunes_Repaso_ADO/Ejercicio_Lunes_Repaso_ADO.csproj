@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6529DA7-8B8D-4583-A1E7-31A6EC15C171}</ProjectGuid>
+    <ProjectGuid>{02B3658B-E669-48BC-AA79-3E56BA27DEC7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>Ejercicio_Lunes_Repaso_ADO</RootNamespace>
+    <AssemblyName>Ejercicio_Lunes_Repaso_ADO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,44 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataClasses2.designer.cs">
+    <Compile Include="Ejercicio_Repaso_Lunes_ADODataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses2.dbml</DependentUpon>
+      <DependentUpon>Ejercicio_Repaso_Lunes_ADODataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Ejercicio_HospitalDataSet.Designer.cs">
+    <Compile Include="Ejercicio_Repaso_Lunes_ADODataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Ejercicio_HospitalDataSet.xsd</DependentUpon>
+      <DependentUpon>Ejercicio_Repaso_Lunes_ADODataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
+    <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Form1.resx">
+    <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,24 +76,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="DataClasses2.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+    <None Include="Ejercicio_Repaso_Lunes_ADODataSet.xsc">
+      <DependentUpon>Ejercicio_Repaso_Lunes_ADODataSet.xsd</DependentUpon>
     </None>
-    <None Include="DataClasses2.dbml.layout">
-      <DependentUpon>DataClasses2.dbml</DependentUpon>
-    </None>
-    <None Include="Ejercicio_HospitalDataSet.xsc">
-      <DependentUpon>Ejercicio_HospitalDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Ejercicio_HospitalDataSet.xsd">
+    <None Include="Ejercicio_Repaso_Lunes_ADODataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Ejercicio_HospitalDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Ejercicio_Repaso_Lunes_ADODataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Ejercicio_HospitalDataSet.xss">
-      <DependentUpon>Ejercicio_HospitalDataSet.xsd</DependentUpon>
+    <None Include="Ejercicio_Repaso_Lunes_ADODataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ejercicio_Repaso_Lunes_ADODataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,9 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
