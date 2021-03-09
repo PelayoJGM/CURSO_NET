@@ -31,6 +31,12 @@ namespace Ejercicio_Lunes_Repaso_ADO
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDCLIENTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aPELLIDOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nOMBRESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ejercicioRepasoLunesADODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ejercicio_Repaso_Lunes_ADODataSet = new Ejercicio_Lunes_Repaso_ADO.Ejercicio_Repaso_Lunes_ADODataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -43,19 +49,13 @@ namespace Ejercicio_Lunes_Repaso_ADO
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.ejercicio_Repaso_Lunes_ADODataSet = new Ejercicio_Lunes_Repaso_ADO.Ejercicio_Repaso_Lunes_ADODataSet();
-            this.ejercicioRepasoLunesADODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ejercicioRepasoLunesADODataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cLIENTETableAdapter = new Ejercicio_Lunes_Repaso_ADO.Ejercicio_Repaso_Lunes_ADODataSetTableAdapters.CLIENTETableAdapter();
-            this.iDCLIENTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aPELLIDOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nOMBRESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio_Repaso_Lunes_ADODataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio_Repaso_Lunes_ADODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -72,9 +72,48 @@ namespace Ejercicio_Lunes_Repaso_ADO
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(482, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(427, 267);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // iDCLIENTEDataGridViewTextBoxColumn
+            // 
+            this.iDCLIENTEDataGridViewTextBoxColumn.DataPropertyName = "IDCLIENTE";
+            this.iDCLIENTEDataGridViewTextBoxColumn.HeaderText = "IDCLIENTE";
+            this.iDCLIENTEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDCLIENTEDataGridViewTextBoxColumn.Name = "iDCLIENTEDataGridViewTextBoxColumn";
+            this.iDCLIENTEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // aPELLIDOSDataGridViewTextBoxColumn
+            // 
+            this.aPELLIDOSDataGridViewTextBoxColumn.DataPropertyName = "APELLIDOS";
+            this.aPELLIDOSDataGridViewTextBoxColumn.HeaderText = "APELLIDOS";
+            this.aPELLIDOSDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.aPELLIDOSDataGridViewTextBoxColumn.Name = "aPELLIDOSDataGridViewTextBoxColumn";
+            this.aPELLIDOSDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nOMBRESDataGridViewTextBoxColumn
+            // 
+            this.nOMBRESDataGridViewTextBoxColumn.DataPropertyName = "NOMBRES";
+            this.nOMBRESDataGridViewTextBoxColumn.HeaderText = "NOMBRES";
+            this.nOMBRESDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nOMBRESDataGridViewTextBoxColumn.Name = "nOMBRESDataGridViewTextBoxColumn";
+            this.nOMBRESDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cLIENTEBindingSource
+            // 
+            this.cLIENTEBindingSource.DataMember = "CLIENTE";
+            this.cLIENTEBindingSource.DataSource = this.ejercicioRepasoLunesADODataSetBindingSource;
+            // 
+            // ejercicioRepasoLunesADODataSetBindingSource
+            // 
+            this.ejercicioRepasoLunesADODataSetBindingSource.DataSource = this.ejercicio_Repaso_Lunes_ADODataSet;
+            this.ejercicioRepasoLunesADODataSetBindingSource.Position = 0;
+            // 
+            // ejercicio_Repaso_Lunes_ADODataSet
+            // 
+            this.ejercicio_Repaso_Lunes_ADODataSet.DataSetName = "Ejercicio_Repaso_Lunes_ADODataSet";
+            this.ejercicio_Repaso_Lunes_ADODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -94,6 +133,7 @@ namespace Ejercicio_Lunes_Repaso_ADO
             this.button2.TabIndex = 2;
             this.button2.Text = "ELIMINAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -176,53 +216,14 @@ namespace Ejercicio_Lunes_Repaso_ADO
             this.textBox4.Size = new System.Drawing.Size(264, 22);
             this.textBox4.TabIndex = 12;
             // 
-            // ejercicio_Repaso_Lunes_ADODataSet
-            // 
-            this.ejercicio_Repaso_Lunes_ADODataSet.DataSetName = "Ejercicio_Repaso_Lunes_ADODataSet";
-            this.ejercicio_Repaso_Lunes_ADODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ejercicioRepasoLunesADODataSetBindingSource
-            // 
-            this.ejercicioRepasoLunesADODataSetBindingSource.DataSource = this.ejercicio_Repaso_Lunes_ADODataSet;
-            this.ejercicioRepasoLunesADODataSetBindingSource.Position = 0;
-            // 
             // ejercicioRepasoLunesADODataSetBindingSource1
             // 
             this.ejercicioRepasoLunesADODataSetBindingSource1.DataSource = this.ejercicio_Repaso_Lunes_ADODataSet;
             this.ejercicioRepasoLunesADODataSetBindingSource1.Position = 0;
             // 
-            // cLIENTEBindingSource
-            // 
-            this.cLIENTEBindingSource.DataMember = "CLIENTE";
-            this.cLIENTEBindingSource.DataSource = this.ejercicioRepasoLunesADODataSetBindingSource;
-            // 
             // cLIENTETableAdapter
             // 
             this.cLIENTETableAdapter.ClearBeforeFill = true;
-            // 
-            // iDCLIENTEDataGridViewTextBoxColumn
-            // 
-            this.iDCLIENTEDataGridViewTextBoxColumn.DataPropertyName = "IDCLIENTE";
-            this.iDCLIENTEDataGridViewTextBoxColumn.HeaderText = "IDCLIENTE";
-            this.iDCLIENTEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDCLIENTEDataGridViewTextBoxColumn.Name = "iDCLIENTEDataGridViewTextBoxColumn";
-            this.iDCLIENTEDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // aPELLIDOSDataGridViewTextBoxColumn
-            // 
-            this.aPELLIDOSDataGridViewTextBoxColumn.DataPropertyName = "APELLIDOS";
-            this.aPELLIDOSDataGridViewTextBoxColumn.HeaderText = "APELLIDOS";
-            this.aPELLIDOSDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.aPELLIDOSDataGridViewTextBoxColumn.Name = "aPELLIDOSDataGridViewTextBoxColumn";
-            this.aPELLIDOSDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nOMBRESDataGridViewTextBoxColumn
-            // 
-            this.nOMBRESDataGridViewTextBoxColumn.DataPropertyName = "NOMBRES";
-            this.nOMBRESDataGridViewTextBoxColumn.HeaderText = "NOMBRES";
-            this.nOMBRESDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nOMBRESDataGridViewTextBoxColumn.Name = "nOMBRESDataGridViewTextBoxColumn";
-            this.nOMBRESDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form1
             // 
@@ -246,10 +247,10 @@ namespace Ejercicio_Lunes_Repaso_ADO
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio_Repaso_Lunes_ADODataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio_Repaso_Lunes_ADODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicioRepasoLunesADODataSetBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

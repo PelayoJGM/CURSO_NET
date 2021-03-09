@@ -14,7 +14,7 @@ namespace Ejercicio_Lunes_Repaso_ADO
     public partial class Form1 : Form
     {
 
-     private SqlConnection conexion = new SqlConnection("server=CADAVILES10\\SQLEXPRESS; Initial Catalog=prueba_ado; Integrated Security=True");
+     private SqlConnection conexion = new SqlConnection("server=CADAVILES10\\SQLEXPRESS; Initial Catalog=Ejercicio_Repaso_Lunes_ADO; Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -35,17 +35,23 @@ namespace Ejercicio_Lunes_Repaso_ADO
         private void button1_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            string IDCLIENTE = textBox1.Text;
+            string ID = textBox1.Text;
             string NOMBRE = textBox2.Text;
             string APELLIDOS = textBox3.Text;
-            string cadena = "insert into Tabla_ado (IDCLIENTE, NOMBRE, APELLIDOS) values (" + IDCLIENTE + ",'" + NOMBRE + "'," + APELLIDOS + ")";
-
+            string cadena = "insert into CLIENTE (IDCLIENTE, NOMBRE, APELLIDOS) values ('" + ID + "','" + NOMBRE + "','" + APELLIDOS + "')";
             SqlCommand comando = new SqlCommand(cadena, conexion);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Los datos se agregaron corerctamente");
+            MessageBox.Show("Los datos se agregaron correctamente");
+            //cargar();
+            //cargarCombo();
             textBox1.Text = "";
             textBox2.Text = "";   
-            conexion.Close();
+            conexion.Close();  
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
