@@ -1,0 +1,20 @@
+﻿<Window x:Class="Primer_Entity.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Primer_Entity"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="105,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Especialidad" HorizontalAlignment="Left" Margin="105,166,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="228,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="228,192,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Mates</ComboBoxItem>
+            <ComboBoxItem>Religión</ComboBoxItem>
+            <ComboBoxItem>Sus labores</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="165,295,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Ejercicio_Listado_de_Alumnos" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CADAVILES10\SQLEXPRESS;Initial Catalog=Ejercicio_Listado_de_Alumnos;Integrated Security=True" SettingsObjectName="Ejercicio_Listado_de__Alumnos.Properties.Settings" SettingsPropertyName="Ejercicio_Listado_de_AlumnosConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Alumnos" Member="Alumnos">
+    <Type Name="Alumnos">
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DNI" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Turno" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Repetidor" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Modulo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
